@@ -10,13 +10,13 @@
         
     --fonte-link: #0084FF;
     --fonte-cinza: #666;
-    --borda-cabecalho-mobile: #333;
+    --borda-nav-mobile: #333;
     --bg-rodape: #333;
-    --bg-chamada-mobile: #333;
+    --bg-home-mobile: #333;
     
-    --planos-cartao-start: #56CCF2;
-    --planos-cartao-ultra: #B04CD9;
-    --planos-cartao-mega: #E33B3B;
+    --budget-card-start: #56CCF2;
+    --budget-card-ultra: #B04CD9;
+    --budget-card-mega: #E33B3B;
 
     --montserrat: 'Montserrat', sans-serif;
 }
@@ -31,7 +31,7 @@ body {
     padding-left: 6%;
 }
 
-.botao {
+.button {
     text-align: center;
     display: block;
     width: 100%;
@@ -42,7 +42,7 @@ body {
     border-radius: 5px;
 }
 
-.cabecalho {
+.nav {
     color: var(--branco);
     width: 100%;
     box-sizing: border-box;
@@ -54,10 +54,10 @@ body {
     border-bottom: 5px solid var(--laranja);
     position: absolute;
     box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.675) ;
-    background-color: var(--bg-chamada-mobile);
+    background-color: var(--bg-home-mobile);
 }
 
-.cabecalho__logo {
+.nav__logo {
     margin-bottom: 1rem;
     max-width:150px;
     max-height:200px;
@@ -65,11 +65,11 @@ body {
     height: auto;
 }
 
-.cabecalho__navegacao {
+.nav__bar {
     text-align: center;
 }
 
-.cabecalho__link {
+.nav__link {
     font-size: 1.1rem;
     display: inline-block;
     margin-right: .7rem;
@@ -77,12 +77,12 @@ body {
     margin-left: .7rem;
 }
 
-.cabecalho__link:hover{ 
+.nav__link:hover{ 
     color: var(--laranja);
 }
 
 
-.chamada  {
+.home  {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -97,7 +97,7 @@ body {
         
 }
 
-.chamada__titulo {
+.home__title {
     font-family: var(--montserrat);
     font-size: 2rem;
     font-weight: 700;
@@ -105,23 +105,23 @@ body {
     margin-bottom: 1.5rem;
 }
 
-.chamada__texto {
+.home__text {
     font-size: 1.25rem;
     line-height: normal;
     margin: 0 auto 2.5rem;
 }
 
-.chamada__botao {
+.home__button {
     width: 100%;
 }
 
-.sobre {
+.about {
     padding-top: 5rem;
     padding-bottom: 5rem;
     background-color: rgba(169, 169, 169, 0.315);
 }
 
-.sobre__titulo {
+.about__title {
     color: var(--cinza-escuro);
     font-weight: 700;
     font-size: 1.5rem;
@@ -131,30 +131,30 @@ body {
     margin-bottom: 1.25rem;
 }
 
-.sobre__texto {
+.about__text {
     line-height: normal;
     margin-bottom: 1rem;
     text-align: center;
 }
 
-.sobre__texto--destaque {
+.about__text--focus {
     color: var(--cinza-escuro);
     font-weight: 700;
 }
 
-.sobre__plataformas {
+.about__plataformas {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 1rem;
 }
 
-.diferenciais {
+.services {
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
     background-color: var(--cinza-escuro);
 }
-.diferenciais__titulo {
+.services__title {
     color: var(--branco);
     font-weight: 700;
     font-size: 1.5rem;
@@ -175,18 +175,18 @@ body {
     height: auto;
 }
 
-.diferenciais__lista {
+.services__lista {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-.diferenciais__item {
+.services__item {
     max-width: 350px;
     padding: 2rem 5rem 2rem 5rem;
 }
 
-.item__titulo {
+.item__title {
     color: var(--branco);
     font-weight: 700;
     font-size: 1.2rem;
@@ -196,13 +196,13 @@ body {
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.521);
 }
 
-.planos {
+.budget {
     background-color: rgba(169, 169, 169, 0.315);
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
 
-.planos__titulo {
+.budget__title {
     color: var(--cinza-escuro);
     font-weight: 700;
     font-size: 1.5rem;
@@ -212,13 +212,13 @@ body {
     margin-bottom: 1.25rem;
 }
 
-.planos__cartoes {
+.budget__card {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.cartao {
+.card {
     display: flex;
     flex-direction: column;
     background-color: var(--branco);
@@ -229,7 +229,7 @@ body {
     box-shadow: 0 2px 10px 2px #00000010;
 }
 
-.cartao__titulo {
+.card__title {
     font-weight: 700;
     font-size: 1.5rem;
     text-align: center;
@@ -239,16 +239,16 @@ body {
     color: var(--laranja)
 }
 
-.cartao__conteudo {
+.card__content {
     padding: 0 15%;
 }
 
-.cartao__texto {
+.card__text {
     color: var(--fonte-cinza);
     line-height: 28px;
 }
 
-.cartao__botao {
+.card__button {
     font-size: 1.2rem;
     font-weight: 700;
     width: 100%;
@@ -260,12 +260,12 @@ body {
     color: var(--laranja)
 }
 
-.cartao__botao:hover{
+.card__button:hover{
     background-color: var(--laranja);
     color: var(--branco)
 }
 
-.contato {
+.contact {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -275,7 +275,7 @@ body {
     padding-bottom: 2rem;
 }
 
-.contato__titulo {
+.contact__title {
     color: var(--cinza-escuro);
     font-weight: 700;
     font-size: 1.5rem;
@@ -285,46 +285,46 @@ body {
     margin-bottom: 1.25rem;
 }
 
-.contato__botao {
+.contact__button {
     margin-top: 1rem;
     background-color: var(--laranja);
     color: var(--branco);
     border-color: var(--laranja);
 }
 
-.contato__botao:hover{
+.contact__button:hover{
     background-color: var(--branco);
     color: var(--laranja);
     border-color: var(--laranja);
 }
 
-.contato__descricao {
+.contact__description {
     margin-bottom: 2rem;
 }
 
-.contato__endereco {
+.contact__address {
     font-size: 1.5rem;
     line-height: normal;
     margin-bottom: 2rem;
 }
 
-.contato__contato {
+.contact__contact {
     font-size: 1.2rem;
     line-height: 1.8;
     margin-top: 2rem;
 }
 
-.contato__contato-telefone {
+.contact__contact-tel {
     line-height: normal;
 }
 
-.contato__contato-email {
+.contact__contact-email {
     color: var(--fonte-link);
     text-decoration: underline;
     display: block;
 }
 
-.contato__mapa {
+.contact__map {
     margin-bottom: 1rem;
     max-width:400px;
     max-height:300px;
@@ -347,7 +347,7 @@ body {
     height: auto;
 }
 
-.rodape__navegacao {
+.rodape__nav {
     color: var(--branco);
     text-align: center;
     line-height: 3;
@@ -359,7 +359,7 @@ body {
     margin: 0 .5rem .7rem;
 }
 
-#footer__direitos {
+#footer__rights {
     color: var(--branco-vazado);
     text-align: center;
     font-size:small;
@@ -373,114 +373,114 @@ body {
 }
 
 @media screen and (max-width: 759px){
-    .contato__botao{
+    .contact__button{
         max-width: 150px;
         max-height: 60px;
     }
 
-    .chamada{
+    .home{
         padding-top: 75px;
     }
 
-    .sobre__texto{
+    .about__text{
         font-size: 0.9;
     }
 
-    .contato__endereco{
+    .contact__address{
         font-size: 1rem;
     }
 
-    .cartao__conteudo{
+    .card__content{
         text-align: center;
     }
 
-    .chamada__texto{
+    .home__text{
         max-width: 600px;
     }
 
-    .cartao{
+    .card{
         max-width: 400px;
     }
 
-    .contato__contato-email{
+    .contact__contact-email{
         display: inline-block;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .chamada__texto{
+    .home__text{
         max-width: 600px;
     }
 
-    .cartao{
+    .card{
         max-width: 400px;
     }
 
-    .contato__contato-email{
+    .contact__contact-email{
         display: inline-block;
     }
 }
 
 @media screen and (min-width: 1024px){
-    .cabecalho{
+    .nav{
         flex-direction: row;
         justify-content: space-between;
     }
 
-    .chamada{
+    .home{
         padding-top: 8.25rem;
     }
 
-    .chamada__titulo{
+    .home__title{
         font-size: 3.25rem;
         margin-bottom:2rem;
     }
 
-    .diferenciais__lista{
+    .services__lista{
         justify-content: space-around;
     }
 
-    .sobre{
+    .about{
         display: flex;
     }
 
-    .sobre__conteudo{
+    .about__content{
         margin-right: 3rem;
     }
 
-    .sobre__texto-divisao{
+    .about__text-division{
         padding-bottom: 1.5rem;
     }
 
-    .contato .container {
+    .contact .container {
         padding-left: calc((100% - 940px)/2);
         padding-right: calc((100% - 940px)/2);
     }
 
-    .contato__conteudo {
+    .contact__content {
         width: 100%;
         display: flex;
         justify-content: space-between;
         text-align: left;
     }
 
-    .contato__mapa {
+    .contact__map {
         align-self: flex-end;
 
         width: 375px;
     }
 
-    .contato__contato-email {
+    .contact__contact-email {
         display: block;
     }
 
-    .planos__cartoes {
+    .budget__card {
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-end;
     }
 
-    .cartao {
+    .card {
         max-width: 300px;
     }
 
@@ -490,7 +490,7 @@ body {
         justify-content: space-between;
     }
 
-    .rodape__navegacao {
+    .rodape__nav {
         text-align: left;
         min-width: 600px;
     }

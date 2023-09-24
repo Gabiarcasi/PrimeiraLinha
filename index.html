@@ -9,125 +9,129 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-        <header class="cabecalho container">
-            <img src="img/logo_oficina.png" alt="Logo da Primeira Linha" class="cabecalho__logo">
-            <nav class="cabecalho__navegacao">
+
+        <header class="nav container">
+            <img src="img/logo_oficina.png" alt="Logo da Primeira Linha" class="nav__logo">
+            <nav class="nav__bar">
                 <ul>
-                    <li class="cabecalho__link"><a href="#sobre">Sobre</a></li>
-                    <li class="cabecalho__link"><a href="#diferenciais">Serviços</a></li>
-                    <li class="cabecalho__link"><a href="#planos">Orçamentos</a></li>
-                    <li class="cabecalho__link"><a href="#contato">Contato</a></li>
-                    <li class="cabecalho__link"><a href="#contato">Localização</a></li>
+                    <li class="nav__link"><a href="#about">Sobre</a></li>
+                    <li class="nav__link"><a href="#services">Serviços</a></li>
+                    <li class="nav__link"><a href="#budget">Orçamentos</a></li>
+                    <li class="nav__link"><a href="#contact">Contato</a></li>
+                    <li class="nav__link"><a href="#contact">Localização</a></li>
                 </ul>
             </nav>
         </header>
+
         <main>
-            <section class="chamada container">
-                <h1 class="chamada__titulo">Oficina Primeira Linha</h1>
-                <p class="chamada__texto">Somos mais que uma empresa de oficina veicular; somos parceiros de confiança na estrada.</p>
-                <a href="https://api.whatsapp.com/send?phone=556232843050" class="chamada__botao botao">Fale Conosco</a>
+            <section class="home container">
+                <h1 class="home__title">Oficina Primeira Linha</h1>
+                <p class="home__text">Somos mais que uma empresa de oficina veicular; somos parceiros de confiança na estrada.</p>
+                <a href="https://api.whatsapp.com/send?phone=556232843050" class="home__button button">Fale Conosco</a>
             </section>
 
-            <section id="sobre" class="sobre container">
-                <div class="sobre__conteudo">
-                    <h2 class="sobre__titulo">Sobre</h2>
-                    <p class="sobre__texto">Bem-vindo à <strong class="sobre__texto-destaque">Primeira Linha Reparação Veicular</strong>!</p>
-                    <p class="sobre__texto">
+            <section id="about" class="about container">
+                <div class="about__content">
+                    <h2 class="about__title">about</h2>
+                    <p class="about__text">Bem-vindo à <strong class="about__text-focus">Primeira Linha Reparação Veicular</strong>!</p>
+                    <p class="about__text">
                         Há mais de uma década, temos orgulhosamente servido nossa comunidade com excelência em serviços de mecânica, lanternagem, pintura e muito mais. Nosso compromisso com a qualidade e integridade é o nosso alicerce. Somos mais que uma empresa de oficina veicular; somos parceiros de confiança na estrada. 
                     </p>
-                    <p class="sobre__texto sobre__texto-destaque sobre__texto-divisao">
+                    <p class="about__text about__text-focus about__text-division">
                         Localizados nas proximidades do Serra Dourada, convidamos você a vivenciar a diferença Primeira Linha em reparação veicular.
                     </p>
-                    <p class="sobre__texto">Deixe-nos cuidar do seu carro com o mesmo carinho que você dá a ele.</p>
+                    <p class="about__text">Deixe-nos cuidar do seu carro com o mesmo carinho que você dá a ele.</p>
                 </div>
             </section>
-            <section id="diferenciais" class="diferenciais container">
-                <h2 class="diferenciais__titulo">Serviços</h2>
-                <ul class="diferenciais__lista">
-                    <li class="diferenciais__item diferenciais__item-mecanica">
+
+            <section id="services" class="services container">
+                <h2 class="services__title">Serviços</h2>
+                <ul class="services__lista">
+                    <li class="services__item services__item-mecanica">
                         <img class="item_img" src="img/mecanica.png">
-                        <h2 class="item__titulo">Mecânica</h2>
+                        <h2 class="item__title">Mecânica</h2>
                     </li>
-                    <li class="diferenciais__item diferenciais__item-lanternagem">
+                    <li class="services__item services__item-lanternagem">
                         <img class="item_img" src="img/lanternagem.png">
-                        <h2 class="item__titulo">Lanternagem</h2>
+                        <h2 class="item__title">Lanternagem</h2>
                     </li>
-                    <li class="diferenciais__item diferenciais__item-especialista-pintura">
+                    <li class="services__item services__item-pintura">
                         <img class="item_img" src="img/pintura.png">
-                        <h2 class="item__titulo">Pintura</h2>
+                        <h2 class="item__title">Pintura</h2>
                     </li>
-                    <li class="diferenciais__item diferenciais__item-especialista-oleo">
+                    <li class="services__item services__item-oleo">
                         <img class="item_img" src="img/trocaoleo.png">
-                        <h2 class="item__titulo">Troca do Óleo</h2>
+                        <h2 class="item__title">Troca do Óleo</h2>
                     </li>
-                    <li class="diferenciais__item diferenciais__item-especialista-alinhamento">
+                    <li class="services__item services__item-alinhamento">
                         <img class="item_img" src="img/alinhamento.png">
-                        <h2 class="item__titulo">Alinhamento e</br> Balanceamento</h2>
+                        <h2 class="item__title">Alinhamento e</br> Balanceamento</h2>
                     </li>
                 </ul>
             </section>
     
-            <section id="planos" class="planos container">
-                <h2 class="planos__titulo">Orçamentos</h2>
-                <ul class="planos__cartoes">
-                    <li class="cartao cartao-lanternagem">
-                        <h3 class="cartao__titulo">Lanternagem</h3>
-                        <article class="cartao__conteudo">
-                            <p class="cartao__texto">Reparação e restauração da estrutura externa do veículo, incluindo a correção de amassados, arranhões, e danos à carroceria, para deixar o carro com uma aparência impecável.</p>
-                            <a href="https://api.whatsapp.com/send?phone=556232843050" class="cartao__botao cartao__botao-lanternagem botao">Fazer Orçamento</a>
+            <section id="budget" class="budget container">
+                <h2 class="budget__title">Orçamentos</h2>
+                <ul class="budget__card">
+                    <li class="card card-lanternagem">
+                        <h3 class="card__title">Lanternagem</h3>
+                        <article class="card__content">
+                            <p class="card__text">Reparação e restauração da estrutura externa do veículo, incluindo a correção de amassados, arranhões, e danos à carroceria, para deixar o carro com uma aparência impecável.</p>
+                            <a href="https://api.whatsapp.com/send?phone=556232843050" class="card__button card__button-lanternagem button">Fazer Orçamento</a>
                         </article>
                     </li>
-                    <li class="cartao cartao-mecanica">
-                        <h3 class="cartao__titulo">Mecânica</h3>
-                        <article class="cartao__conteudo">
-                            <p class="cartao__texto">Manutenção e reparo dos componentes internos do veículo, como o motor, transmissão, freios e suspensão, garantindo que o carro funcione de forma segura e eficiente.</p>
-                            <a href="https://api.whatsapp.com/send?phone=556232843050" class="cartao__botao cartao__botao-mecanica botao">Fazer Orçamento</a>
+                    <li class="card card-mecanica">
+                        <h3 class="card__title">Mecânica</h3>
+                        <article class="card__content">
+                            <p class="card__text">Manutenção e reparo dos componentes internos do veículo, como o motor, transmissão, freios e suspensão, garantindo que o carro funcione de forma segura e eficiente.</p>
+                            <a href="https://api.whatsapp.com/send?phone=556232843050" class="card__button card__button-mecanica button">Fazer Orçamento</a>
                         </article>
                     </li>
-                    <li class="cartao cartao-outros">
-                        <h3 class="cartao__titulo">Outros</h3>
-                        <article class="cartao__conteudo">
-                            <p class="cartao__texto">Temos diversos outros serviços, para fazer com que seu carro fique em perfeito estado.</p>
-                            <a href="https://api.whatsapp.com/send?phone=556232843050" class="cartao__botao cartao__botao-outros botao">Fazer Orçamento</a>
+                    <li class="card card-outros">
+                        <h3 class="card__title">Outros</h3>
+                        <article class="card__content">
+                            <p class="card__text">Temos diversos outros serviços, para fazer com que seu carro fique em perfeito estado.</p>
+                            <a href="https://api.whatsapp.com/send?phone=556232843050" class="card__button card__button-outros button">Fazer Orçamento</a>
                         </article>
                     </li>
                 </ul>
             </section>
 
-            <section id="contato" class="contato container">
-                <h2 class="contato__titulo">Contato</h2>
-                <p>Entre em contato com a gente</p>
-                <a href="tel:+556232843050" class="contato__botao botao">Entre em contato</a>
+            <section id="contact" class="contact container">
+                <h2 class="contact__title">contact</h2>
+                <p>Entre em contact com a gente</p>
+                <a href="tel:+556232843050" class="contact__button button">Entre em contact</a>
             </section>
 
-            <section class="contato container">
-                <div class="contato__conteudo">
-                    <div class="contato__informacoes">
-                        <p class="contato__descricao">Um pouco mais sobre a Primeira Linha</p>
-                        <address class="contato__endereco">
+            <section class="contact container">
+                <div class="contact__content">
+                    <div class="contact__infos">
+                        <p class="contact__description">Um pouco mais about a Primeira Linha</p>
+                        <address class="contact__address">
                             Av. Santos, 181 - Jardim Novo</br>Mundo, Goiânia - GO, 74715-450
-                            <article class="contato__contato">
-                                <p><a href="tel:+556232843050" class="contato__contato-telefone">(62) 3284-3050</a> ou <a href="mailto:primeiralinharv@hotmail.com" class="contato__contato-email">primeiralinharv@hotmail.com</a></p>
+                            <article class="contact__contact">
+                                <p><a href="tel:+556232843050" class="contact__contact-tel">(62)3284-3050</a> ou <a href="mailto:primeiralinharv@hotmail.com" class="contact__contact-email">primeiralinharv@hotmail.com</a></p>
                             </article>
                         </address>
                     </div>
-                    <iframe class="contato__mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15286.773071579566!2d-49.2305621!3d-16.6922258!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef12370b09975%3A0xd7591b21a7c3ada!2sPrimeira%20Linha%20Servi%C3%A7os%20Automotivos!5e0!3m2!1spt-BR!2sbr!4v1695490198353!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe class="contact__map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15286.773071579566!2d-49.2305621!3d-16.6922258!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef12370b09975%3A0xd7591b21a7c3ada!2sPrimeira%20Linha%20Servi%C3%A7os%20Automotivos!5e0!3m2!1spt-BR!2sbr!4v1695490198353!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </section>
-
         </main>
-        <footer class="rodape container">
-            <img src="img/logo_oficina.png" alt="Logo da Apeperia" class="rodape__logo">
+
+        <footer class="footer container">
+            <img src="img/logo_oficina.png" alt="Logo da Primeira Linha" class="footer__logo">
             <nav>
-                <ul class="rodape__navegacao">
-                    <li class="rodape__link"><a href="#sobre">Sobre</a></li>
-                    <li class="rodape__link"><a href="#planos">Orçamentos</a></li>
-                    <li class="rodape__link"><a href="#contato">Localização</a></li>
-                    <li class="rodape__link"><a href="#diferenciais">Serviços</a></li>
-                    <li class="rodape__link"><a href="#contato">Contato</a></li>
+                <ul class="footer__nav">
+                    <li class="footer__link"><a href="#about">Sobre</a></li>
+                    <li class="footer__link"><a href="#budget">Orçamentos</a></li>
+                    <li class="footer__link"><a href="#contact">Localização</a></li>
+                    <li class="footer__link"><a href="#services">Serviços</a></li>
+                    <li class="footer__link"><a href="#contact">Contato</a></li>
                 </ul>
             </nav>
-            <p id="footer__direitos">© 2023 Primeira Linha ®. Todos os direitos reservados. Desenvolvido por <a class="meuinsta" href="https://www.instagram.com/arcasidev/">Gabriela Arcasi</a></p>
+            <p id="footer__rights">© 2023 Primeira Linha ®. Todos os direitos reservados. Desenvolvido por <a class="meuinsta" href="https://www.instagram.com/arcasidev/">Gabriela Arcasi</a></p>
         </footer>
+
     </body>
 </html>
